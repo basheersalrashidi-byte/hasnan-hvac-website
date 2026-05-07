@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>موقع الشركة</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        text-align: center;
+    }
+
+    header {
+        background: #111;
+        color: white;
+        padding: 20px;
+    }
+
+    nav {
+        background: #222;
+        padding: 10px;
+    }
+
+    nav button {
+        margin: 5px;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        background: #00aaff;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    nav button:hover {
+        background: #0088cc;
+    }
+
+    section {
+        padding: 40px;
+    }
+
+    .reviews {
+        background: white;
+        margin: 20px auto;
+        width: 80%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        text-align: right;
+        direction: rtl;
+    }
+
+    .review {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .review:last-child {
+        border-bottom: none;
+    }
+
+    footer {
+        background: #111;
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>موقع الشركة</h1>
+    <p>خدمة ممتازة وسريعة وفي الوقت المحدد 👍</p>
+</header>
+
+<nav>
+    <button onclick="scrollToSection('reviews')">التقييمات</button>
+    <button onclick="bookNow()">احجز الآن</button>
+    <button onclick="showMessage()">اتصل بنا</button>
+</nav>
+
+<section>
+    <h2>مرحباً بكم</h2>
+    <p>نقدم خدمات سريعة وممتازة لجميع العملاء.</p>
+</section>
+
+<section id="reviews" class="reviews">
+    <h2 style="text-align:center;">التقييمات</h2>
+
+    <div class="review">
+        <p>👍 عمل ممتاز وفي الوقت المحدد وخدمة سريعة جداً</p>
+        <small>❤️ إعجاب واحد</small>
+    </div>
+
+    <div class="review">
+        <p>عمل جميل وجيد جداً</p>
+        <small>Zaheer Ali - مراجعة واحدة</small>
+    </div>
+
+    <div class="review">
+        <p>عملهم ممتاز جداً</p>
+        <small>Ali Zaheer - 3 مراجعات</small>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 جميع الحقوق محفوظة</p>
+</footer>
+
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
+
+function bookNow() {
+    alert("تم تفعيل الحجز — سيتم ربطه قريباً بنظام حجز حقيقي");
+}
+
+function showMessage() {
+    alert("اتصل بنا: سيتم الرد عليك قريباً");
+}
+</script>
+
+</body>
+</html>
