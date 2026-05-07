@@ -2,7 +2,8 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>موقع الشركة</title>
+<title>Husnain Ac repairing center kuwait</title>
+
 <style>
     body {
         margin: 0;
@@ -61,6 +62,25 @@
         border-bottom: none;
     }
 
+    /* PHOTO GALLERY */
+    .gallery {
+        background: white;
+        margin: 20px auto;
+        width: 85%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    .gallery img {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    }
+
     footer {
         background: #111;
         color: white;
@@ -73,19 +93,30 @@
 <body>
 
 <header>
-    <h1>موقع الشركة</h1>
+    <h1>Husnain Ac repairing center kuwait</h1>
     <p>خدمة ممتازة وسريعة وفي الوقت المحدد 👍</p>
 </header>
 
 <nav>
     <button onclick="scrollToSection('reviews')">التقييمات</button>
+    <button onclick="scrollToSection('gallery')">الصور</button>
     <button onclick="bookNow()">احجز الآن</button>
     <button onclick="showMessage()">اتصل بنا</button>
 </nav>
 
 <section>
     <h2>مرحباً بكم</h2>
-    <p>نقدم خدمات سريعة وممتازة لجميع العملاء.</p>
+    <p>نقدم خدمات تكييف وتصليح سريعة وممتازة لجميع العملاء في الكويت.</p>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section id="gallery" class="gallery">
+    <h2>صور أعمالنا</h2>
+
+    <img src="images/1.jpg" alt="صورة 1">
+    <img src="images/2.jpg" alt="صورة 2">
+    <img src="images/3.jpg" alt="صورة 3">
+    <img src="images/4.jpg" alt="صورة 4">
 </section>
 
 <section id="reviews" class="reviews">
@@ -108,7 +139,7 @@
 </section>
 
 <footer>
-    <p>© 2026 جميع الحقوق محفوظة</p>
+    <p>© 2026 Husnain Ac repairing center kuwait</p>
 </footer>
 
 <script>
